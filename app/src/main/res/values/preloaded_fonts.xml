@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo_2_medium</item>
+        <item>@font/caveat_semibold</item>
+        <item>@font/libre_caslon_text_bold</item>
+        <item>@font/nunito_medium</item>
+        <item>@font/permanent_marker</item>
+        <item>@font/roboto_medium</item>
+    </array>
+</resources>

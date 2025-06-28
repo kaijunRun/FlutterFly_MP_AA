@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flutter Fly</string>
+    <string name="splash_description">The Beauty of Butterfly</string>
+    <string name="lets_start">Let\'s Start</string>
+</resources>

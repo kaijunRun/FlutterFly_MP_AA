@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@color/white"
+      android:padding="10dp">
+
+    <!-- Welcome Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/libre_caslon_text_bold"
+          android:text="Welcome to Butterfly World"
+          android:textColor="@color/primary_dark"
+          android:gravity="center"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- New Top Card - AR Feature Promotion -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arPromoCard"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/purple_200">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/arIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/butterfly"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/arIcon"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="🌟 Butterflies Come Alive! 🌟"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:text="See butterflies fly around you with magic AR!"
+              android:textColor="@color/white"
+              android:textSize="14sp" />
+
+          <Button
+              android:id="@+id/btnTryAR"
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:layout_marginTop="16dp"
+              android:backgroundTint="@color/white"
+              android:text="✨ Try the Magic AR ✨"
+              android:textColor="@color/purple_200"
+              android:paddingHorizontal="16dp"/>
+        </LinearLayout>
+      </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+  <!-- Categories Background Container -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/rounded_top_background"
+      android:orientation="vertical"
+      android:paddingTop="24dp"
+      android:paddingBottom="16dp"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp"
+      android:elevation="2dp">
+
+    <!-- Categories Header Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"/>
+
+    <!-- New Description Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito_medium"
+        android:gravity="start"
+        android:text="Tap any card below to start your butterfly adventure!"
+        android:textSize="13sp" />
+
+    <!-- First Row of Cards -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:layout_marginBottom="8dp">
+
+      <!-- Learning Card -->
+      <androidx.cardview.widget.CardView
+          android:id="@+id/learningCard"
+          android:layout_width="0dp"
+          android:layout_height="220dp"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          app:cardCornerRadius="16dp"
+          app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/gradient_blue"
+            android:padding="16dp">
+
+          <ImageView
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/butterfly_school"
+              android:layout_marginTop="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Butterfly School 🎓"
+              android:textColor="@color/white"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_marginTop="12dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Fun butterfly facts!"
+              android:textColor="@color/white"
+              android:textSize="15sp"
+              android:layout_marginTop="8dp"
+              android:gravity="center"/>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <!-- Test Card -->
+      <androidx.cardview.widget.CardView
+          android:id="@+id/testCard"
+          android:layout_width="0dp"
+          android:layout_height="220dp"
+          android:layout_margin="8dp"
+          android:layout_weight="1"
+          app:cardCornerRadius="16dp"
+          app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/gradient_green"
+            android:padding="16dp">
+
+          <ImageView
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/butterfly_quiz"
+              android:layout_marginTop="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Butterfly Quiz 🧠"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_marginTop="12dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Test your knowledge!"
+              android:textColor="@color/white"
+              android:textSize="15sp"
+              android:layout_marginTop="8dp"
+              android:gravity="center"/>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Second Row - Enhanced Gallery Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/galleryCard"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/gradient_orange">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:padding="16dp">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:src="@drawable/butterfly_gallery"
+              android:layout_marginBottom="8dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Butterfly Gallery 🦋"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Explore 100+ species!"
+              android:textColor="@color/white"
+              android:textSize="15sp"
+              android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Decorative butterflies -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/side1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:rotation="-15"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/side2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:rotation="20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW!"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/round_corner_accent"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="12dp"/>
+      </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+  </LinearLayout>
+  </LinearLayout>
+</ScrollView>

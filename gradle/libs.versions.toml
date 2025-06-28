@@ -1,0 +1,37 @@
+[versions]
+agp = "8.10.0"
+arsceneview = "0.9.8"
+core = "1.49.0"
+coreVersion = "1.17.1"
+googleCore = "1.35.0"
+googleCoreVersion = "1.40.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+assets = "1.17.1"
+ux = "1.23.0"
+
+[libraries]
+arsceneview = { module = "io.github.sceneview:arsceneview", version.ref = "arsceneview" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+core-v1350 = { module = "com.google.ar:core", version.ref = "googleCore" }
+core-v1400 = { module = "com.google.ar:core", version.ref = "googleCoreVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+sceneform-core = { module = "com.google.ar.sceneform:core", version.ref = "coreVersion" }
+sceneform-ux = { module = "com.google.ar.sceneform.ux:sceneform-ux", version.ref = "coreVersion" }
+assets = { group = "com.google.ar.sceneform", name = "assets", version.ref = "assets" }
+ux = { module = "com.gorisse.thomas.sceneform:ux", version.ref = "ux" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

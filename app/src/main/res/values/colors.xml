@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary colors -->
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <!-- Feedback colors -->
+    <color name="green">#FF4CAF50</color>  <!-- For correct answers -->
+    <color name="red">#FFF44336</color>    <!-- For incorrect answers -->
+    <color name="yellow">#FFFFEB3B</color>  <!-- Optional for highlights -->
+
+    <!-- Arrow and accent colors -->
+    <color name="arrow_color">#FF6200EE</color>  <!-- Same as purple_500 -->
+
+    <!-- Optional background colors -->
+    <color name="light_gray">#FFEEEEEE</color>
+    <color name="box_stroke">#FF9E9E9E</color>  <!-- For empty boxes -->
+
+    <!-- Confetti colors (if you want multi-colored confetti) -->
+    <color name="confetti_red">#FFFF5252</color>
+    <color name="confetti_blue">#FF448AFF</color>
+    <color name="confetti_yellow">#FFFFD740</color>
+    <color name="confetti_green">#FF69F0AE</color>
+
+    <!-- Primary colors -->
+    <color name="primary">#FF6D4CFF</color>
+    <color name="primary_dark">#FF5A3BD9</color>
+    <color name="primary_light">#FFB39Dff</color>
+
+    <!-- Card background colors -->
+    <color name="light_blue">#E3F2FD</color>  <!-- Learning card -->
+    <color name="light_green">#E8F5E9</color> <!-- Species card -->
+    <color name="light_purple">#F3E5F5</color> <!-- Future card 1 -->
+    <color name="light_orange">#FFF3E0</color> <!-- Future card 2 -->
+
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Dark Colors -->
+    <color name="dark_green">#FF2E7D32</color>
+    <color name="dark_blue">#FF1565C0</color>
+    <color name="dark_purple">#FF6A1B9A</color>
+    <color name="dark_orange">#FFE65100</color>
+
+    <!-- Light Colors with Transparency (for cards) -->
+    <color name="light_blue_transparent">#804BC5F4</color>
+    <color name="light_green_transparent">#8081C784</color>
+    <color name="light_purple_transparent">#80BA68C8</color>
+    <color name="light_orange_transparent">#80FFB74D</color>
+    <color name="light_yellow">#FFFFF9C4</color>
+
+    <!-- Background Colors -->
+    <color name="bg_dark_green">#FF1B5E20</color>
+    <color name="bg_light_green">#FFC8E6C9</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+</resources>
